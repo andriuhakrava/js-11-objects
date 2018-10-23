@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Homework JS objects</title>
+	<style>
+		button {cursor: pointer;}
+		table { width: 400px; border-collapse: collapse;}
+		th, td { padding: 8px; border: 1px solid silver;}
+		th { text-align: left;}
+		th,	.total { font-size: 120%; line-height: 1.3em; font-weight: bold;}
+		th:nth-child(3),
+		td:nth-child(3),
+		.total td:nth-child(2) { text-align: right;}
+	</style>
+</head>
+<body>
+	<form id="formUsers">
+		<p><input type="text" id="login" placeholder="Enter your login"></p>
+		<p><input type="email" id="email" placeholder="Enter your e-mail"></p>
+		<p><input type="tel" id="phone" placeholder="Enter your phone"></p>
+		<p><input type="text" id="role" placeholder="Enter your role">
+			<label for="role">admin, moderator, user, viewer</label></p>
+		<button type="submit" id="btn">Get values</button>
+	</form>
+	<h2><span class="translate">Корзина</span></h2>
+	<table>
+	  <tr>
+	    <th><span class="translate">Товар</span></th>
+	    <th><span class="translate">Кількість</span></th>
+	    <th><span class="translate">Ціна</span></th>
+	  </tr>
+	  <tr>
+	    <td><strong>Adapter 220/12 euro</strong>:</td>
+	    <td>2 <span class="translate">шт.</span></td>
+	    <td><em>40 <span class="translate">грн.</span></td>
+	  </tr>
+	  <tr>
+	    <td><strong>Cable 5A</strong>:</td>
+	    <td>7 <span class="translate">м.</span></td>
+	    <td><em>8 <span class="translate">грн.</span></td>
+	  </tr>
+	  <tr>
+	    <td><strong>Socket 2x 16A white</strong>:</td>
+	    <td>1 <span class="translate">шт.</span></td>
+	    <td><em>40 <span class="translate">грн.</span></td>
+	  </tr>
+	  <tr class="total">
+	    <td colspan="2" class="translate">Загальна сума:</td>
+	    <td><em>320 <span class="translate">грн.</span></em></td>
+	  </tr>
+	</table>
+	<script src="script.js"></script>
+</body>
+</html>
